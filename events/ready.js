@@ -1,11 +1,17 @@
 const fs = require("fs");
 const { devId } = require('../configs/config.json')
+const asciimo = require('asciimo').Figlet;
+const colors = require('colors')
 
 module.exports = {
     name: 'ready',
     once: true,
     async execute(client) {
-        console.log(`Ready! Logged in as ${client.user.tag}`);
+        asciimo.write("Welcome! Starting Up!", 'Colossal', function(art) {
+            console.log(art.green)
+            console.log(`Ready! Logged in as ${client.user.tag} - Serving ${client.guilds.cache.size} guilds`);
+        })
+
 
         /**
          * Setting command devPermissions
@@ -52,7 +58,7 @@ module.exports = {
                     await command[1].setDefaultPermission(false)
                     await command[1].permissions.set({ guild: guild[1].id, permissions: devPermissions })
                 }
-                // of command matches any of the admin commands, update devPermissions to admin
+                // of command matches any of the admin commands, update permissions to admin only
                 if (adminCommands.includes(command[1].name)) {
                     console.log(`Changing permissions for ${command[1].name} - admin command`)
                     await command[1].setDefaultPermission(false)
