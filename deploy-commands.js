@@ -14,6 +14,7 @@ const userFiles = fs.readdirSync('./commands/user').filter(file => file.endsWith
 function loadCommand(path, dir) {
     for (const file of dir) {
         const command = require(`${path}/${file}`);
+        console.log(`Registering command from ${file} in ${path.substring(11)}`)
         commands.push(command.data.toJSON());
     }
 }
