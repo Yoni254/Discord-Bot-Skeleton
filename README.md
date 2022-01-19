@@ -14,7 +14,7 @@ The bot is using discord.js with message interactions and will have a mySQL tabl
 ## Project credits and copyrights
 
 Most here was written by myself, and currently there are no other collaborators for it.
-Details about the packages required here can be found in requirment.txt
+Details about the packages requirements can be found in package.json
 
 
 © 2021-2022 copyright  - all rights for this project are reserved to myself, yonatan25 / yoni254 / yonatan.
