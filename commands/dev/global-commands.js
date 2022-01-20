@@ -2,8 +2,8 @@ const { SlashCommandBuilder } = require('@discordjs/builders');
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('commands')
-        .setDescription('*Dev only* - manage bot commands')
+        .setName('global-commands')
+        .setDescription('*Dev only* - manage bot global commands')
         .addSubcommand(subCommand =>
             subCommand.setName('reload')
                 .setDescription('Reload specific command types')

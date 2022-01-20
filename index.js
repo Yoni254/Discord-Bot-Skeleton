@@ -35,7 +35,7 @@ for (const file of eventFiles) {
 }
 
 client.on('interactionCreate', async interaction => {
-    if (interaction.isCommand() || interaction.isUserContextMenu()) {
+    if (interaction.isCommand() || interaction.isContextMenu()) {
         const command = client.commands.get(interaction.commandName);
         if (!command) return;
 
