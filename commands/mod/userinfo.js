@@ -1,9 +1,10 @@
-const { SlashCommandBuilder } = require('@discordjs/builders');
+const { ContextMenuCommandBuilder } = require('@discordjs/builders');
 
 module.exports = {
-    data: new SlashCommandBuilder()
+    data: new ContextMenuCommandBuilder()
         .setName('userinfo')
-        .setDescription('Replies with information about a specific user!'),
+        .setType(2), // 2 = User
+
     async execute(interaction) {
         await interaction.reply('User Information!');
     },

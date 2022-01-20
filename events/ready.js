@@ -11,6 +11,8 @@ module.exports = {
             console.log(art.green)
             console.log(`Ready! Logged in as ${client.user.tag} - Serving ${client.guilds.cache.size} guilds`);
         })
+        client.user.setActivity('Booting up...', {type: "PLAYING"})
+        client.user.setStatus('idle')
 
 
         /**
@@ -67,6 +69,9 @@ module.exports = {
 
             }
         }
+
+        client.user.setActivity('For interactions', {type: "WATCHING"})
+        client.user.setStatus('online')
 
     },
 };
