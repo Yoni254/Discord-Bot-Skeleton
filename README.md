@@ -1,20 +1,10 @@
 # What is this?
 
-This is a work in progress bot discord bot that I'm creating ^_^
+This is a basic alyout for discord bot creation in JS. 
+There's no real commands here but the outline is there when I decide to make a new bot.
+
+It's mostly for testing and implemenation of new mechanices added since my last code rewrite
+
 Discord is an online messaging platform that you can find more about in [here](https://discord.com).
 
-The bot is currently private and is planned to be released at a later unspecified date.
-Some of the plans include: Server Security, Server Managment, General information, Fun commands
 
-## Project details
-
-As the project is still a work in progress not much details can be made.
-The bot is using discord.js with message interactions and will have a mySQL table connected to it.
-
-## Project credits and copyrights
-
-Most here was written by myself, and currently there are no other collaborators for it.
-Details about the packages requirements can be found in package.json
-
-
-© 2021-2022 copyright  - all rights for this project are reserved to myself, yonatan25 / yoni254 / yonatan.
